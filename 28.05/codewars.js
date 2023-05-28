@@ -70,11 +70,7 @@ console.log(abbrevName('Nazarii pastukh'));
 //     Return true if yes, false otherwise :)
 
 const hero=(bullets, dragons)=> {
-    if (bullets >= dragons * 2) {
-        return true;
-    } else {
-        return false;
-    }
+    return bullets >= dragons * 2;
 }
 console.log(hero(2,1));
 
