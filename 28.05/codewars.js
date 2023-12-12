@@ -79,3 +79,46 @@ console.log(hero(2,1));
 
 const booleanToString=(b)=>b.toString();
 console.log(booleanToString(true));
+
+
+let  x  = !"" + false;
+console.log(typeof x);
+console.log('---------');
+
+
+let str = "       Applied mathematics     ";
+
+let trimmedStr = str.trim();
+
+let duplicatedStr = trimmedStr.repeat(2);
+
+console.log(duplicatedStr);
+
+console.log('---------');
+
+let arr = [1, 2, 3, 4, 5];
+
+let sum = arr.reduce((accumulator, currentValue) => {
+    if (currentValue % 2 === 0) {
+        return accumulator + currentValue * 2;
+    } else {
+        return accumulator + currentValue * 3;
+    }
+}, 0);
+
+console.log(sum);
+
+console.log('---------');
+
+
+const monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+const createMonthObjects = (months) => {
+    return months.map((month) => ({
+        [month]: `${month.length} letters`
+    }));
+};
+
+const result = createMonthObjects(monthsArray);
+
+console.log(result);
